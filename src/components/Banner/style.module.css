@@ -1,24 +1,21 @@
-
-.Banner{
-    padding-top: 140px
+.bannercontent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 672px;
+  margin: auto;
 }
-.bannercontent{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap:32px
+.getstarted-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.getstarted-btn{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.intro {
+  text-align: center;
+  color: white;
 }
-.intro{
-    text-align: center;
-    color: white;
-}
-.sub-heading{
-    color: #fafafa;
-    text-align: center;
-
+.sub-heading {
+  color: #fafafa;
+  text-align: center;
 }

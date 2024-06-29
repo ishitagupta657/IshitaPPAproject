@@ -1,25 +1,22 @@
-.upperpart{
-    color:#fafafa;
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 48px;
-    letter-spacing: -0.012em;
-    text-align: center;
-  
+.upperpart {
+  color: #fafafa;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -0.012em;
+  text-align: center;
 }
-.middlepart{
-    color:#fafafa;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
-  
+.middlepart {
+  color: #fafafa;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
 }
-.contactus{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap:24px;
-    align-items:center;
-    padding-bottom: 200px;
+.contactus {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
 }

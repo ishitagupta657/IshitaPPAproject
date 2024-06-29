@@ -1,9 +1,11 @@
 .lower-description {
+  margin-top: 48px;
   display: flex;
   flex-direction: row;
   object-fit: contain;
   color: #d9d9d9;
-  gap:48px;
+  gap: 48px;
+  justify-content: space-between;
 }
 .lower-description p {
   font-size: 14px;
@@ -19,8 +21,8 @@
   text-align: left;
 }
 
-@media(max-width: 720px) {
-  .lower-description{
+@media (max-width: 720px) {
+  .lower-description {
     flex-direction: column;
   }
 }

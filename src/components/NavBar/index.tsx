@@ -4,7 +4,7 @@ export const NavBar = () => {
     return <>
         <div className={`${style.header} dark-theme`}>
             <div className={style['left-nav-containts']}>
-                <div className='Company-title'>
+                <div>
                     <img className={style.brandicon} src="/assets/img/brandicon.png" width={0} height={0} alt="Brand Logo" />
                 </div>
                 <div className={style['other-header-containts']}>Docs</div>
@@ -14,8 +14,16 @@ export const NavBar = () => {
                 <div className={style['other-header-containts']}>Contact Us</div>
             </div>
             <div className={style['right-nav-containts']}>
-                <div className={style['Login-btn']}><button className={style['login']}>Login</button></div>
-                <div className={style['Signup-btn']}><button className={style['signup']}>Sign Up</button></div>
+                <div className={style['login-btn']}>
+                    <button className={style['login']}>
+                        Login
+                    </button>
+                </div>
+                <div>
+                    <button className={'cta-btn'}>
+                        Sign Up
+                    </button>
+                </div>
             </div>
         </div>
     </>

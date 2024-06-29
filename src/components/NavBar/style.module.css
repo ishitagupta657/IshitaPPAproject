@@ -1,10 +1,11 @@
 .header {
   max-height: 48px;
   min-height: 48px;
-  padding: 10px 48px;
   display: flex;
+  padding: 0px 48px;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 2px solid #27272A;
 }
 .left-nav-containts {
   display: flex;
@@ -25,14 +26,13 @@
 }
 .other-header-containts {
   color: #d9d9d9;
-
-  font-family: "Inter";
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
   text-align: left;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .login {
   background-color: black;
@@ -40,13 +40,12 @@
   align-items: center;
   border: 0px;
 }
-.Login-btn {
+.login-btn {
   display: flex;
   align-items: center;
-  
 }
-.signup{
-  padding:5px;
+.signup {
+  padding: 5px;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 6px;

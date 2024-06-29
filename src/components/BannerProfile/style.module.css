@@ -1,11 +1,12 @@
-.Profilebanner{
+.profilebanner{
     display: flex;
     justify-content: center;
+    margin-top: 48px;
 }
 
 .Profile-description-large{
     object-fit: contain;
-    width: 100%;
+    width: 100%; 
 }
 .Profile-description-smaller{
     object-fit: contain;

@@ -8,6 +8,32 @@
   background-color: black;
 }
 
-.page-padding{
+.page-padding {
   padding: 0px 144px;
+  display: flex;
+  flex-direction: column;
+  gap: 144px;
+  padding: 144px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -0.012em;
+  text-align: center;
+  color: white;
+}
+
+.cta-btn {
+  padding: 0px 16px;
+  gap: 8px;
+  border-radius: 6px;
+  opacity: 0px;
+  height: 32px;
+  color: #18181b;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  vertical-align: middle;
 }
