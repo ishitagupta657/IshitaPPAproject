@@ -1,0 +1,24 @@
+
+.Banner{
+    padding-top: 140px
+}
+.bannercontent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:32px
+}
+.getstarted-btn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.intro{
+    text-align: center;
+    color: white;
+}
+.sub-heading{
+    color: #fafafa;
+    text-align: center;
+
+}

@@ -1,0 +1,13 @@
+.Profilebanner{
+    display: flex;
+    justify-content: center;
+}
+
+.Profile-description-large{
+    object-fit: contain;
+    width: 100%;
+}
+.Profile-description-smaller{
+    object-fit: contain;
+    width: 80%;
+}
