@@ -6,7 +6,7 @@ export const InfoContent = () => {
     return (
         <div className={style.description}>
             <div>
-                <h1 className={`section-title`}>Quick solutions, less stress</h1>
+                <h1 className={`section-title text-theme-color`}>Quick solutions, less stress</h1>
             </div>
             <div className={style['lower-description']}>
                 <FeatureCard src={"./assets/img/Feature icon.png"} title = "Fix emergencies fast" desc = "Save 20-30 minutes per ticket - no more searching for relevant issues and runbooks"/>
@@ -17,17 +17,17 @@ export const InfoContent = () => {
         </div>
     )
 }
-
+{`${style['other-header-containts']} text-theme-color`}
 const FeatureCard = ({title, desc, src}:any) => {
     return <>
         <div className={style['left-description']}>
             <img src={src} />
-            <h3>
+            <h3 className={`${style['other-header-containts']} text-theme-color`}>
                 {title}
             </h3>
             <br>
             </br>
-            <p>{desc}</p>
+            <p className={`${style['other-header-containts']} text-theme-color`}>{desc}</p>
         </div>
     </>
 }

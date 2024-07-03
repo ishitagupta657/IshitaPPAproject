@@ -1,30 +1,41 @@
-import style from './style.module.css'
-import Image from 'next/image'
+import style from './style.module.css';
+import Link from 'next/link'
+
+import Image from 'next/image';
+import Toggle from '../Toggle';
+
 export const NavBar = () => {
-    return <>
+    return (
         <div className={`${style.header} dark-theme`}>
             <div className={style['left-nav-containts']}>
                 <div>
-                    <img className={style.brandicon} src="/assets/img/brandicon.png" width={0} height={0} alt="Brand Logo" />
+                    <Link href="/">
+                        <img className={style.brandicon} src="/assets/img/brandicon.png" width={0} height={0} alt="Brand Logo" />
+                    </Link>
                 </div>
-                <div className={style['other-header-containts']}>Docs</div>
-                <div className={style['other-header-containts']}>Pricing</div>
-                <div className={style['other-header-containts']}>Status</div>
-                <div className={style['other-header-containts']}>FAQs</div>
-                <div className={style['other-header-containts']}>Contact Us</div>
+                <div className={`${style['other-header-containts']} text-theme-color`}>Docs</div>
+                <div className={`${style['other-header-containts']} text-theme-color`}>Pricing</div>
+                <div className={`${style['other-header-containts']} text-theme-color`}>Status</div>
+                <div className={`${style['other-header-containts']} text-theme-color`}>FAQs</div>
+                <div className={`${style['other-header-containts']} text-theme-color`}>Contact Us</div>
             </div>
             <div className={style['right-nav-containts']}>
-                <div className={style['login-btn']}>
-                    <button className={style['login']}>
-                        Login
+                <Toggle />
+                <div className= {`${style['login-btn']}text-theme-color`}>
+            
+                    <button className={`${style['login']} dark-theme text-theme-color `}>
+                    <Link className={'cta-btn'} href="/login"></Link>
+                 
                     </button>
                 </div>
                 <div>
-                    <button className={'cta-btn'}>
-                        Sign Up
+                    <button>
+                        <Link className={'cta-btn'} href="/signup">Sign Up</Link>
                     </button>
                 </div>
             </div>
         </div>
-    </>
-}
+    );
+};
+
+                 

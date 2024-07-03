@@ -7,23 +7,23 @@
   justify-content: space-between;
   border-bottom: 2px solid #27272A;
 }
+
 .left-nav-containts {
   display: flex;
   gap: 32px;
 }
-.upper-head {
-  display: flex;
-  justify-content: space-between;
-}
+
 .right-nav-containts {
   display: flex;
   gap: 32px;
 }
+
 .brandicon {
   width: auto;
   max-height: 48px;
   min-height: 48px;
 }
+
 .other-header-containts {
   color: #d9d9d9;
   font-size: 14px;
@@ -34,16 +34,18 @@
   align-items: center;
   cursor: pointer;
 }
+
 .login {
-  background-color: black;
   color: #d9d9d9;
   align-items: center;
   border: 0px;
 }
+
 .login-btn {
   display: flex;
   align-items: center;
 }
+
 .signup {
   padding: 5px;
   padding-left: 15px;
@@ -51,4 +53,14 @@
   border-radius: 6px;
   color: black;
   background-color: #fafafa;
+}
+
+.toggle {
+  background-color: var(--toggle-bg);
+}
+.dark .toggle {
+  background-color: var(--toggle-bg-dark);
+}
+.switch {
+  transition: transform 0.3s;
 }

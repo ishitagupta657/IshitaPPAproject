@@ -6,9 +6,9 @@ export const EndingConnect = () => {
     return (
         <div className={style.contactus}>
             <div>
-                <h1  className={`section-title`}>Get in touch</h1>
+                <h1 className={`section-title text-theme-color`}>Get in touch</h1>
             </div>
-            <div className={style['middlepart']}>
+            <div className={`${style['middlepart']} text-theme-color`}>
                 <h5>Request a demo, or hop on a call.</h5>
             </div>
             <div className={style['lowerpart']}>

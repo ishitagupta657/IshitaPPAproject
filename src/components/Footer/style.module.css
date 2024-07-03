@@ -23,6 +23,6 @@
 
   .right-nav-containts{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: flex-end;
     gap: 32px
   }

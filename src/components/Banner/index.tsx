@@ -9,9 +9,10 @@ export const Banner = ({ title, subTitle, ctaBtn, showCTA, imageSize }: any) => 
                 <div className={style['upper-banner']}>
                     <div className={style['bannercontent']}>
                         <div>
-                            <h1 className={'section-title'}>{title}</h1>
+                            <h1 className={'section-title text-theme-color'}>{title}</h1>
                         </div>
-                        <div className={style['sub-heading']}>
+                        <div className={`${style['sub-heading']}text-theme-color`}>
+                       
                             <p>{subTitle}</p>
                         </div>
                         {showCTA ? <div className={style['getstarted-btn']}>

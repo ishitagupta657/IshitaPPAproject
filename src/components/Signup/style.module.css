@@ -1,0 +1,78 @@
+.wholeSignupScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.signup-Card {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.left-Part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  width: 400px;
+  padding: 20px;
+}
+
+.right-Part {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  width: 400px;
+}
+
+.brandIcon {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.cardHeader h1 {
+  margin: 0;
+  color: #333;
+  text-align: center;
+}
+
+.cardContents h5 {
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.cardContents input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.member-Check p {
+  margin: 0;
+  color: #777;
+}
+
+.signupButton button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+}
+.bottomConfirmationPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
