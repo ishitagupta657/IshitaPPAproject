@@ -9,8 +9,18 @@ export const Login = () => {
         password: "",
     });
     const [buttonDisabled, setButtonDisabled] = useState(true);
+    const isEmailValid = (email: string) => {
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailRegex.test(email);
+    };
 
     const onLogin = async () => {
+        if (!isEmailValid(user.email)) {
+            // Show an error message for invalid email
+            return;
+        }
+        // Other validation checks (e.g., password length) go here
+
         try {
             const response = await axios.post('/api/login', user);
             console.log(response.data);
@@ -22,7 +32,6 @@ export const Login = () => {
     React.useEffect(() => {
         setButtonDisabled(!(user.email.length > 0 && user.password.length > 0));
     }, [user]);
-
     return (
         <div className={style.wholeSignupScreen}>
             <div className={style['signup-Card']}>
@@ -52,10 +61,11 @@ export const Login = () => {
                                 onChange={(e) => setUser({ ...user, password: e.target.value })}
                             />
                             <br />
-                            <div className="checkbox-container">
-                                <input type="checkbox" id="rem" name="rem" value="remember" />
-                                <label htmlFor="rem">Remember me</label>
-                            </div>
+                            <div className="checkbox-container" style={{ maxWidth: 'fit-content' }}>
+    <input className="box" type="checkbox" id="rem" name="rem" value="remember" />
+    <label htmlFor="rem">Remember me</label>
+</div>
+
                         </div>
                         <div className={style.signupButton}>
                             <button onClick={onLogin} disabled={buttonDisabled} className={style['login-btn']}>

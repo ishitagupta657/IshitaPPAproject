@@ -120,3 +120,12 @@
 .accountcheck-up span {
     color: #4697de;
 }
+#rem.box{
+    max-width: fit-content;
+}
+.checkbox-container
+{
+max-width: fit-content;
+display: flex;
+flex-direction: row;
+}

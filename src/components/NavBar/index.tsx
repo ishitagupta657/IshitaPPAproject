@@ -21,11 +21,9 @@ export const NavBar = () => {
             </div>
             <div className={style['right-nav-containts']}>
                 <Toggle />
-                <div className= {`${style['login-btn']}text-theme-color`}>
-            
+                <div className={`${style['login-btn']}text-theme-color`}>
                     <button className={`${style['login']} dark-theme text-theme-color `}>
-                    <Link className={'cta-btn'} href="/login"></Link>
-                 
+                        <Link className={'cta-btn'} href="/login"></Link>
                     </button>
                 </div>
                 <div>
@@ -38,4 +36,3 @@ export const NavBar = () => {
     );
 };
 
-                 
