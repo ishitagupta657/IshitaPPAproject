@@ -37,8 +37,8 @@ export const NavBar = (props: Props) => {
 
     const applyWhiteTheme = () => {
         localStorage.setItem('site-theme', "white")
-        const sectionElements = document.querySelectorAll(".theme-background")
-        const textElements = document.querySelectorAll(".text-theme-color")
+        const sectionElements = document.querySelectorAll(".theme-background") as any
+        const textElements = document.querySelectorAll(".text-theme-color") as any
         for (let i = 0; i < sectionElements.length; i++) {
             sectionElements[i].style.backgroundColor = "white"
         }
@@ -48,8 +48,8 @@ export const NavBar = (props: Props) => {
     }
     const applyDarkTheme = () => {
         localStorage.setItem('site-theme', "dark")
-        const sectionElements = document.querySelectorAll(".theme-background")
-        const textElements = document.querySelectorAll(".text-theme-color")
+        const sectionElements = document.querySelectorAll(".theme-background") as any
+        const textElements = document.querySelectorAll(".text-theme-color") as any
         for (let i = 0; i < sectionElements.length; i++) {
             sectionElements[i].style.backgroundColor = "black"
         }
