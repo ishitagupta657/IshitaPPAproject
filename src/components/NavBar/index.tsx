@@ -16,7 +16,7 @@ export const NavBar = (props: Props) => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
-        SetTheme((localStorage).getItem('site-theme'))
+        SetTheme((localStorage).getItem('site-theme') ?? 'dark')
     }, [])
 
     useEffect(() => {
