@@ -7,23 +7,6 @@
   border: none;
   font-size: 16px;
 }
-.forgot-pass {
-  display: inline-block;
-  padding: 10px;
-  border-radius: 5px;
-
-  color: #4697de;
-  border: none;
-  font-size: 16px;
-}
-.google-btn {
-  color: white;
-  background-color: rgb(180, 13, 13);
-}
-.twitter-btn {
-  color: white;
-  background-color: skyblue;
-}
 .login-btn {
   width: 100%;
   padding: 10px;
@@ -45,8 +28,17 @@
   justify-content: center;
   align-items: center;
   background-color: #333;
-  width: 400px;
+  width: 50%;
   padding: 20px;
+}
+.right-Part {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  width: 50%;
+  max-width: 80vw;
 }
 .brandIcon {
   width: 200px;
@@ -61,8 +53,8 @@
 }
 .cardHeader h1 {
   margin: 0;
-  padding-left: 43%;
-  padding-top: 30%;
+  text-align: center;
+  padding-top: 32px;
 }
 .cardContents {
   padding: 20px;
@@ -71,9 +63,7 @@
   margin: 10px 0;
 }
 .mainPart input {
-  width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -104,21 +94,6 @@
   border-radius: 5px;
   color: white;
 }
-.face-book {
-  background-color: #3b5998;
-}
-.google-btn {
-  background-color: #db4437;
-}
-.twitter-btn {
-  background-color: #1da1f2;
-}
-.accountcheck-up p {
-  margin: 10px 0;
-}
-.accountcheck-up span {
-  color: #4697de;
-}
 #rem.box {
   max-width: fit-content;
 }
@@ -126,4 +101,15 @@
   max-width: fit-content;
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 720px) {
+  .signup-Card {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardHeader h1 {
+    margin: 0;
+    padding-top: 32px;
+  }
 }

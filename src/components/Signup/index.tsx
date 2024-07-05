@@ -79,61 +79,67 @@ export default function Signup() {
                     </div>
                     <div className={style.cardContents}>
                         <div className={style.mainPart}>
-                            <h5>First Name</h5>
-                            <input
-                                type='text'
-                                placeholder='First Name'
-                                value={user.firstName}
-                                onChange={(e) => setUser({ ...user, firstName: e.target.value })}
-                            />
-                            {userErrorState?.firstName ? <><h6 className={style.errorMsg}>{userErrorState?.firstName}</h6></> : <></>}
+                            <div className="p-4">
+                                <h5 className="text-lg font-medium">First Name</h5>
+                                <input
+                                    type="text"
+                                    placeholder="First Name"
+                                    value={user.firstName}
+                                    onChange={(e) => setUser({ ...user, firstName: e.target.value })}
+                                    className="w-full p-2 border border-gray-300 rounded mt-1"
+                                />
+                                {userErrorState?.firstName && <h6 className="text-red-500 text-sm mt-1">{userErrorState?.firstName}</h6>}
 
-                            <h5>Last Name</h5>
-                            <input
-                                type='text'
-                                placeholder='Last Name'
-                                value={user.lastName}
-                                onChange={(e) => setUser({ ...user, lastName: e.target.value })
-                                }
-                            />
-                            {userErrorState.lastName ? <><h6 className={style.errorMsg}>{userErrorState.lastName}</h6></> : <></>}
+                                <h5 className="text-lg font-medium mt-4">Last Name</h5>
+                                <input
+                                    type="text"
+                                    placeholder="Last Name"
+                                    value={user.lastName}
+                                    onChange={(e) => setUser({ ...user, lastName: e.target.value })}
+                                    className="w-full p-2 border border-gray-300 rounded mt-1"
+                                />
+                                {userErrorState?.lastName && <h6 className="text-red-500 text-sm mt-1">{userErrorState?.lastName}</h6>}
 
-                            <h5>Email</h5>
-                            <input
-                                type='text'
-                                placeholder='Email'
-                                value={user.email}
-                                onChange={(e) => setUser({ ...user, email: e.target.value })}
-                            />
-                            {userErrorState.email ? <><h6 className={style.errorMsg}>{userErrorState.email}</h6></> : <></>}
+                                <h5 className="text-lg font-medium mt-4">Email</h5>
+                                <input
+                                    type="text"
+                                    placeholder="Email"
+                                    value={user.email}
+                                    onChange={(e) => setUser({ ...user, email: e.target.value })}
+                                    className="w-full p-2 border border-gray-300 rounded mt-1"
+                                />
+                                {userErrorState?.email && <h6 className="text-red-500 text-sm mt-1">{userErrorState?.email}</h6>}
 
-                            <h5>Phone Number</h5>
-                            <input
-                                type='number'
-                                placeholder='Phone Number'
-                                value={user.phoneNumber}
-                                onChange={(e) => setUser({ ...user, phoneNumber: e.target.value })}
-                            />
-                            {userErrorState.phoneNumber ? <><h6 className={style.errorMsg}>{userErrorState.phoneNumber}</h6></> : <></>}
+                                <h5 className="text-lg font-medium mt-4">Phone Number</h5>
+                                <input
+                                    type="number"
+                                    placeholder="Phone Number"
+                                    value={user.phoneNumber}
+                                    onChange={(e) => setUser({ ...user, phoneNumber: e.target.value })}
+                                    className="w-full p-2 border border-gray-300 rounded mt-1"
+                                />
+                                {userErrorState?.phoneNumber && <h6 className="text-red-500 text-sm mt-1">{userErrorState?.phoneNumber}</h6>}
 
-                            <h5>Password</h5>
-                            <input
-                                type='password'
-                                placeholder='Password'
-                                value={user.password}
-                                onChange={(e) => setUser({ ...user, password: e.target.value })}
-                            />
-                            {userErrorState.password ? <><h6 className={style.errorMsg}>{userErrorState.password}</h6></> : <></>}
+                                <h5 className="text-lg font-medium mt-4">Password</h5>
+                                <input
+                                    type="password"
+                                    placeholder="Password"
+                                    value={user.password}
+                                    onChange={(e) => setUser({ ...user, password: e.target.value })}
+                                    className="w-full p-2 border border-gray-300 rounded mt-1"
+                                />
+                                {userErrorState?.password && <h6 className="text-red-500 text-sm mt-1">{userErrorState?.password}</h6>}
 
-                            <h5>Confirm Password</h5>
-                            <input
-                                type='password'
-                                placeholder='Confirm Password'
-                                value={user.confirmPassword}
-                                onChange={(e) => setUser({ ...user, confirmPassword: e.target.value })}
-                            />
-                            {userErrorState.confirmPassword ? <><h6 className={style.errorMsg}>{userErrorState.confirmPassword}</h6></> : <></>}
-
+                                <h5 className="text-lg font-medium mt-4">Confirm Password</h5>
+                                <input
+                                    type="password"
+                                    placeholder="Confirm Password"
+                                    value={user.confirmPassword}
+                                    onChange={(e) => setUser({ ...user, confirmPassword: e.target.value })}
+                                    className="w-full p-2 border border-gray-300 rounded mt-1"
+                                />
+                                {userErrorState?.confirmPassword && <h6 className="text-red-500 text-sm mt-1">{userErrorState?.confirmPassword}</h6>}
+                            </div>
                         </div>
                         <div className={style.bottomConfirmationPart}>
                             <div className={style['member-Check']}>

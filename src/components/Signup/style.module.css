@@ -82,3 +82,10 @@
   margin-bottom: 5px;
   color: red;
 }
+
+@media (max-width: 720px) {
+  .signup-Card {
+    display: flex;
+    flex-direction: column;
+  }
+}
