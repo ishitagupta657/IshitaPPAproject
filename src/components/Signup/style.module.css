@@ -5,9 +5,11 @@
 }
 
 .signup-Card {
+  width: 1000px;
   display: flex;
   flex-direction: row;
   border-radius: 10px;
+  max-width: 80vw;
 }
 
 .left-Part {
@@ -15,7 +17,7 @@
   justify-content: center;
   align-items: center;
   background-color: #333;
-  width: 400px;
+  width: 50%;
   max-width: 80vw;
   padding: 20px;
 }
@@ -26,7 +28,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #f9f9f9;
-  width: 400px;
+  width: 50%;
   max-width: 80vw;
 }
 
