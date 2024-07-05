@@ -104,3 +104,9 @@ body.dark {
   background-color: #27272A;
   color: #d9d9d9;
 }
+
+@media(max-width:720px){
+  .page-padding{
+    padding: 20px 16px;
+  }
+}

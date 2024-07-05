@@ -1,4 +1,3 @@
-import './global.css'
 import { Banner } from "@/components/Banner";
 import { EndingConnect } from "@/components/EndingConnect";
 import { InfoContent } from "@/components/InfoContent";

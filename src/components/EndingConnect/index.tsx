@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import style from './style.module.css'
 import Image from 'next/image'
 
@@ -12,12 +13,10 @@ export const EndingConnect = () => {
                 <h5>Request a demo, or hop on a call.</h5>
             </div>
             <div className={style['lowerpart']}>
-                <button className='cta-btn'>
-                    Get started &nbsp;
-                    <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 9.63672L5 5.63672L1 1.63672" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
+
+                <Link href="/" className="hidden md:block text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 dark:focus:ring-gray-500 py-2">
+                    <span className='flex'>Get started&nbsp;&nbsp; <img src="./assets/img/nextIcon.svg" /></span>
+                </Link>
             </div>
         </div>
     )
