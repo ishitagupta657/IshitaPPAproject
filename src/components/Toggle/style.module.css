@@ -1,9 +1,0 @@
-.toggle {
-    background-color: var(--toggle-bg);
-}
-.dark .toggle {
-    background-color: var(--toggle-bg-dark);
-}
-.switch {
-    transition: transform 0.3s;
-}

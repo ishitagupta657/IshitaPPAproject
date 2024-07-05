@@ -1,131 +1,129 @@
-.register-highlight{
-    display: inline-block;
-    padding: 10px;
-    border-radius: 5px;
-    
-    color: #ffffff;
-    border: none;
-    font-size: 16px;
+.register-highlight {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
 }
 .forgot-pass {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 5px;
-    
-    color: #4697de;
-    border: none;
-    font-size: 16px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+
+  color: #4697de;
+  border: none;
+  font-size: 16px;
 }
 .google-btn {
-    color: white;
-    background-color: rgb(180, 13, 13);
+  color: white;
+  background-color: rgb(180, 13, 13);
 }
 .twitter-btn {
-    color: white;
-    background-color: skyblue;
+  color: white;
+  background-color: skyblue;
 }
 .login-btn {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
 }
 .signup-Card {
-    width: 800px;
-    display: flex;
-    flex-direction: row;
-    background-color: #ffffff;
-    border-radius: 10px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 .left-Part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
-    width: 400px;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  width: 400px;
+  padding: 20px;
 }
 .brandIcon {
-    width: 200px;
-    margin-bottom: 20px;
+  width: 200px;
+  max-width: 80vw;
+  object-fit: contain;
+  margin-bottom: 20px;
 }
 .wholeSignupScreen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cardHeader h1 {
-    margin: 0;
-    padding-left: 43%;
-    padding-top: 30%;
-   
+  margin: 0;
+  padding-left: 43%;
+  padding-top: 30%;
 }
 .cardContents {
-    padding: 20px;
+  padding: 20px;
 }
 .mainPart h5 {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 .mainPart input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 .signupButton button {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
 }
 .bottomConfirmationPart {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .member-Check {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .member-Check p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 .login-options button {
-    margin: 5px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    color: white;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
 }
 .face-book {
-    background-color: #3b5998;
+  background-color: #3b5998;
 }
 .google-btn {
-    background-color: #db4437;
+  background-color: #db4437;
 }
 .twitter-btn {
-    background-color: #1da1f2;
+  background-color: #1da1f2;
 }
 .accountcheck-up p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 .accountcheck-up span {
-    color: #4697de;
+  color: #4697de;
 }
-#rem.box{
-    max-width: fit-content;
+#rem.box {
+  max-width: fit-content;
 }
-.checkbox-container
-{
-max-width: fit-content;
-display: flex;
-flex-direction: row;
+.checkbox-container {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: row;
 }

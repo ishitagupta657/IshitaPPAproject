@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import style from './style.module.css';
-import Image from 'next/image';
 
 export const Login = () => {
     const [user, setUser] = useState({
@@ -16,11 +15,8 @@ export const Login = () => {
 
     const onLogin = async () => {
         if (!isEmailValid(user.email)) {
-            // Show an error message for invalid email
             return;
         }
-        // Other validation checks (e.g., password length) go here
-
         try {
             const response = await axios.post('/api/login', user);
             console.log(response.data);
@@ -46,45 +42,39 @@ export const Login = () => {
                     </div>
                     <div className={style.cardContents}>
                         <div className={style.mainPart}>
-                            <h5>Email Address</h5>
-                            <input 
-                                type='text' 
-                                placeholder='Email Address' 
-                                value={user.email}
-                                onChange={(e) => setUser({ ...user, email: e.target.value })}
-                            />
-                            <h5>Password</h5>
-                            <input 
-                                type='password' 
-                                placeholder='Password' 
-                                value={user.password}
-                                onChange={(e) => setUser({ ...user, password: e.target.value })}
-                            />
+                            <div>
+                                <h5>Email Address</h5>
+                                <input
+                                    type='text'
+                                    placeholder='Email Address'
+                                    value={user.email}
+                                    onChange={(e) => setUser({ ...user, email: e.target.value })}
+                                />
+                            </div>
+                            <div>
+                                <h5>Password</h5>
+                                <input
+                                    type='password'
+                                    placeholder='Password'
+                                    value={user.password}
+                                    onChange={(e) => setUser({ ...user, password: e.target.value })}
+                                />
+                            </div>
                             <br />
-                            <div className="checkbox-container" style={{ maxWidth: 'fit-content' }}>
-    <input className="box" type="checkbox" id="rem" name="rem" value="remember" />
-    <label htmlFor="rem">Remember me</label>
-</div>
+                            <div className="checkbox-container" style={{ display: 'flex', justifyContent: 'flex-start', gap: '4px' }}>
+                                <div>
+                                    <input className="box" type="checkbox" id="rem" name="rem" value="remember" />
+                                </div>
+                                <div>
+                                    <label htmlFor="rem">Remember me</label>
+                                </div>
+                            </div>
 
                         </div>
                         <div className={style.signupButton}>
                             <button onClick={onLogin} disabled={buttonDisabled} className={style['login-btn']}>
                                 {buttonDisabled ? "No login" : "Login"}
                             </button>
-                        </div>
-                        <div className={style.bottomConfirmationPart}>
-                            <div className={style['member-Check']}>
-                                <p className={style['forgot-pass']}>Forget Password?</p>
-                                <p>or login with</p>
-                                <div className={style['login-options']}>
-                                    <button className={style['face-book']}>facebook</button>
-                                    <button className={style['google-btn']}>google</button>
-                                    <button className={style['twitter-btn']}>twitter</button>
-                                </div>
-                                <div className={style['accountcheck-up']}>
-                                    <p>Don't have an account? <span className={style['register-highlight']}>Register here</span></p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

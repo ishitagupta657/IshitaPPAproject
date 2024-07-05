@@ -39,6 +39,7 @@
   color: #d9d9d9;
   align-items: center;
   border: 0px;
+  background-color: transparent;
 }
 
 .login-btn {
@@ -63,4 +64,9 @@
 }
 .switch {
   transition: transform 0.3s;
+}
+
+.toggle{
+  display: flex;
+  align-items: center;
 }
