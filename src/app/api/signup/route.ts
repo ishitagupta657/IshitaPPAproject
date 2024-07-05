@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { connect } from '@/dbConfig/dbConfig';
 import User from "@/models/userModel";
 import bcryptjs from 'bcryptjs';
-import jwt from 'jsonwebtoken';
+import {sign} from 'jsonwebtoken';
 connect();
 const JWT_SECRET = process.env.JWT_SECRET;
 if (!JWT_SECRET) {
@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
             password: hashedPassword,
         });
         const savedUser = await newUser.save();
-        const token = jwt.sign({ userId: savedUser._id }, JWT_SECRET ??'',{
+        const token = sign({ userId: savedUser._id }, JWT_SECRET ??'',{
             expiresIn: '1h'
         });
 
