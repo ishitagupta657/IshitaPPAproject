@@ -29,6 +29,7 @@
   align-items: center;
   background-color: #333;
   width: 50%;
+  min-width:320px;
   padding: 20px;
 }
 .right-Part {
@@ -38,6 +39,7 @@
   justify-content: space-between;
   background-color: #f9f9f9;
   width: 50%;
+  min-width:320px;
   max-width: 80vw;
 }
 .brandIcon {
@@ -111,5 +113,13 @@
   .cardHeader h1 {
     margin: 0;
     padding-top: 32px;
+  }
+  .right-Part{
+    width: 100%;
+    max-width: 100%;
+  }
+   .left-Part{
+    width: 100%;
+    max-width: 100%;
   }
 }
