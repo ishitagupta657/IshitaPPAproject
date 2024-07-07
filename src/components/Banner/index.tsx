@@ -31,7 +31,7 @@ export const Banner = ({ title, subTitle, ctaBtn, showCTA, imageSize }: any) => 
 
 const Button = ({ ctaBtn }: any) => {
     return <>
-        <Link href="/" className="hidden md:block text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 dark:focus:ring-gray-500 py-2">
+        <Link href="/" className="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 dark:focus:ring-gray-500 py-2">
             <span className='flex'>{ctaBtn}&nbsp;&nbsp; <img src="./assets/img/nextIcon.svg" /></span>
         </Link>
     </>
